@@ -1,4 +1,5 @@
 # Pets
+(*Pets*)
 
 ## Overview
 
@@ -88,7 +89,7 @@ func main() {
 
     ctx := context.Background()
     res, err := s.Pets.ListPets(ctx, operations.ListPetsRequest{
-        Limit: speakeasytryout.Int64(844266),
+        Limit: speakeasytryout.Int64(21453),
     })
     if err != nil {
         log.Fatal(err)
@@ -139,7 +140,7 @@ func main() {
 
     ctx := context.Background()
     res, err := s.Pets.ShowPetByID(ctx, operations.ShowPetByIDRequest{
-        PetID: "unde",
+        PetID: "South bandwidth male",
     })
     if err != nil {
         log.Fatal(err)

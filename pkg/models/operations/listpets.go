@@ -20,14 +20,17 @@ func (o *ListPetsRequest) GetLimit() *int64 {
 }
 
 type ListPetsResponse struct {
+	// HTTP response content type for this operation
 	ContentType string
 	// unexpected error
 	Error   *shared.Error
 	Headers map[string][]string
 	// A paged array of pets
 	ListPetsResponse200JSON []shared.Pet
-	StatusCode              int
-	RawResponse             *http.Response
+	// HTTP response status code for this operation
+	StatusCode int
+	// Raw HTTP response; suitable for custom response parsing
+	RawResponse *http.Response
 }
 
 func (o *ListPetsResponse) GetContentType() string {
