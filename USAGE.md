@@ -22,7 +22,6 @@ func main() {
     res, err := s.Pets.CreatePets(ctx, shared.Pet{
         ID: 1234,
         Name: "Fido",
-        Type: shared.PetTypeCat.ToPointer(),
     })
     if err != nil {
         log.Fatal(err)

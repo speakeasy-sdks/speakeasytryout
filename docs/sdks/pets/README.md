@@ -38,7 +38,6 @@ func main() {
     res, err := s.Pets.CreatePets(ctx, shared.Pet{
         ID: 1234,
         Name: "Fido",
-        Type: shared.PetTypeCat.ToPointer(),
     })
     if err != nil {
         log.Fatal(err)
@@ -88,9 +87,7 @@ func main() {
     )
 
     ctx := context.Background()
-    res, err := s.Pets.ListPets(ctx, operations.ListPetsRequest{
-        Limit: speakeasytryout.Int64(21453),
-    })
+    res, err := s.Pets.ListPets(ctx, operations.ListPetsRequest{})
     if err != nil {
         log.Fatal(err)
     }
