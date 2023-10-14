@@ -29,9 +29,7 @@ import(
 
 func main() {
     s := speakeasytryout.New(
-        speakeasytryout.WithSecurity(shared.Security{
-            BearerAuth: "",
-        }),
+        speakeasytryout.WithSecurity(""),
     )
 
     ctx := context.Background()
@@ -81,9 +79,7 @@ import(
 
 func main() {
     s := speakeasytryout.New(
-        speakeasytryout.WithSecurity(shared.Security{
-            BearerAuth: "",
-        }),
+        speakeasytryout.WithSecurity(""),
     )
 
     ctx := context.Background()
@@ -130,9 +126,7 @@ import(
 
 func main() {
     s := speakeasytryout.New(
-        speakeasytryout.WithSecurity(shared.Security{
-            BearerAuth: "",
-        }),
+        speakeasytryout.WithSecurity(""),
     )
 
     ctx := context.Background()
