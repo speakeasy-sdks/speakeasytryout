@@ -131,7 +131,7 @@ func main() {
 
     ctx := context.Background()
     res, err := s.Pets.ShowPetByID(ctx, operations.ShowPetByIDRequest{
-        PetID: "South bandwidth male",
+        PetID: "string",
     })
     if err != nil {
         log.Fatal(err)
