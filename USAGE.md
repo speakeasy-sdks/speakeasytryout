@@ -1,6 +1,4 @@
 <!-- Start SDK Example Usage -->
-
-
 ```go
 package main
 
@@ -9,6 +7,7 @@ import (
 	"github.com/speakeasy-sdks/speakeasytryout"
 	"github.com/speakeasy-sdks/speakeasytryout/pkg/models/shared"
 	"log"
+	"net/http"
 )
 
 func main() {

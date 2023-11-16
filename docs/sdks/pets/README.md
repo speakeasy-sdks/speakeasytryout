@@ -21,10 +21,11 @@ Create a pet and key characteristics
 package main
 
 import(
+	"github.com/speakeasy-sdks/speakeasytryout/pkg/models/shared"
+	"github.com/speakeasy-sdks/speakeasytryout"
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/speakeasytryout"
-	"github.com/speakeasy-sdks/speakeasytryout/pkg/models/shared"
+	"net/http"
 )
 
 func main() {
@@ -72,11 +73,11 @@ List all pets
 package main
 
 import(
-	"context"
-	"log"
-	"github.com/speakeasy-sdks/speakeasytryout"
 	"github.com/speakeasy-sdks/speakeasytryout/pkg/models/shared"
+	"github.com/speakeasy-sdks/speakeasytryout"
+	"context"
 	"github.com/speakeasy-sdks/speakeasytryout/pkg/models/operations"
+	"log"
 )
 
 func main() {
@@ -121,11 +122,11 @@ Info for a specific pet
 package main
 
 import(
-	"context"
-	"log"
-	"github.com/speakeasy-sdks/speakeasytryout"
 	"github.com/speakeasy-sdks/speakeasytryout/pkg/models/shared"
+	"github.com/speakeasy-sdks/speakeasytryout"
+	"context"
 	"github.com/speakeasy-sdks/speakeasytryout/pkg/models/operations"
+	"log"
 )
 
 func main() {
