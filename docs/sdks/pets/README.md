@@ -30,7 +30,7 @@ import(
 
 func main() {
     s := speakeasytryout.New(
-        speakeasytryout.WithSecurity(""),
+        speakeasytryout.WithSecurity("<YOUR_BEARER_TOKEN_HERE>"),
     )
 
     ctx := context.Background()
@@ -82,7 +82,7 @@ import(
 
 func main() {
     s := speakeasytryout.New(
-        speakeasytryout.WithSecurity(""),
+        speakeasytryout.WithSecurity("<YOUR_BEARER_TOKEN_HERE>"),
     )
 
     ctx := context.Background()
@@ -131,7 +131,7 @@ import(
 
 func main() {
     s := speakeasytryout.New(
-        speakeasytryout.WithSecurity(""),
+        speakeasytryout.WithSecurity("<YOUR_BEARER_TOKEN_HERE>"),
     )
 
     ctx := context.Background()

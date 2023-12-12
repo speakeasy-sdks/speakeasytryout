@@ -32,7 +32,7 @@ import (
 
 func main() {
 	s := speakeasytryout.New(
-		speakeasytryout.WithSecurity(""),
+		speakeasytryout.WithSecurity("<YOUR_BEARER_TOKEN_HERE>"),
 	)
 
 	ctx := context.Background()
@@ -70,6 +70,8 @@ func main() {
 
 <!-- Start Special Types [types] -->
 ## Special Types
+
+
 <!-- End Special Types [types] -->
 
 
@@ -99,7 +101,7 @@ import (
 
 func main() {
 	s := speakeasytryout.New(
-		speakeasytryout.WithSecurity(""),
+		speakeasytryout.WithSecurity("<YOUR_BEARER_TOKEN_HERE>"),
 	)
 
 	ctx := context.Background()
@@ -149,7 +151,7 @@ import (
 func main() {
 	s := speakeasytryout.New(
 		speakeasytryout.WithServerIndex(0),
-		speakeasytryout.WithSecurity(""),
+		speakeasytryout.WithSecurity("<YOUR_BEARER_TOKEN_HERE>"),
 	)
 
 	ctx := context.Background()
@@ -186,7 +188,7 @@ import (
 func main() {
 	s := speakeasytryout.New(
 		speakeasytryout.WithServerURL("https://src8wr32cg.api.quickmocker.com"),
-		speakeasytryout.WithSecurity(""),
+		speakeasytryout.WithSecurity("<YOUR_BEARER_TOKEN_HERE>"),
 	)
 
 	ctx := context.Background()
@@ -264,7 +266,7 @@ import (
 
 func main() {
 	s := speakeasytryout.New(
-		speakeasytryout.WithSecurity(""),
+		speakeasytryout.WithSecurity("<YOUR_BEARER_TOKEN_HERE>"),
 	)
 
 	ctx := context.Background()
