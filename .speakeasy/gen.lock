@@ -4,16 +4,16 @@ management:
   docChecksum: 54fce703c0e40f21dcd69c724618bd14
   docVersion: 1.0.0
   speakeasyVersion: internal
-  generationVersion: 2.225.2
-  releaseVersion: 0.6.1
-  configChecksum: 6ecaf0cd54c65afa81729d5b3104c6af
+  generationVersion: 2.234.3
+  releaseVersion: 0.6.2
+  configChecksum: f6dbb4a8a5f6b48ce64860867d16cdbe
   repoURL: https://github.com/speakeasy-sdks/speakeasytryout.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/speakeasytryout
   published: true
 features:
   go:
-    core: 3.3.0
+    core: 3.3.1
     globalSecurity: 2.82.3
     globalServerURLs: 2.82.1
 generatedFiles:
