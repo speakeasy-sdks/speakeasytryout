@@ -4,9 +4,9 @@ management:
   docChecksum: 54fce703c0e40f21dcd69c724618bd14
   docVersion: 1.0.0
   speakeasyVersion: internal
-  generationVersion: 2.234.3
-  releaseVersion: 0.6.2
-  configChecksum: f6dbb4a8a5f6b48ce64860867d16cdbe
+  generationVersion: 2.237.2
+  releaseVersion: 0.6.3
+  configChecksum: 387f11b4e234fa08a6e30b8abe642ce8
   repoURL: https://github.com/speakeasy-sdks/speakeasytryout.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/speakeasytryout
@@ -14,14 +14,13 @@ management:
 features:
   go:
     core: 3.3.1
-    globalSecurity: 2.82.3
+    globalSecurity: 2.82.4
     globalServerURLs: 2.82.1
 generatedFiles:
   - pets.go
   - petstore.go
   - go.mod
   - go.sum
-  - tests/helpers.go
   - pkg/models/sdkerrors/sdkerror.go
   - pkg/types/bigint.go
   - pkg/types/date.go
