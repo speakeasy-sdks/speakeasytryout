@@ -5,6 +5,7 @@ package speakeasytryout
 import (
 	"context"
 	"fmt"
+	"github.com/speakeasy-sdks/speakeasytryout/internal/hooks"
 	"github.com/speakeasy-sdks/speakeasytryout/pkg/models/shared"
 	"github.com/speakeasy-sdks/speakeasytryout/pkg/utils"
 	"net/http"
@@ -52,6 +53,7 @@ type sdkConfiguration struct {
 	GenVersion        string
 	UserAgent         string
 	RetryConfig       *utils.RetryConfig
+	Hooks             *hooks.Hooks
 }
 
 func (c *sdkConfiguration) GetServerDetails() (string, map[string]string) {
@@ -144,14 +146,17 @@ func New(opts ...SDKOption) *Petstore {
 		sdkConfiguration: sdkConfiguration{
 			Language:          "go",
 			OpenAPIDocVersion: "1.0.0",
-			SDKVersion:        "0.7.0",
-			GenVersion:        "2.250.2",
-			UserAgent:         "speakeasy-sdk/go 0.7.0 2.250.2 1.0.0 github.com/speakeasy-sdks/speakeasytryout",
+			SDKVersion:        "0.8.0",
+			GenVersion:        "2.258.2",
+			UserAgent:         "speakeasy-sdk/go 0.8.0 2.258.2 1.0.0 github.com/speakeasy-sdks/speakeasytryout",
+			Hooks:             hooks.New(),
 		},
 	}
 	for _, opt := range opts {
 		opt(sdk)
 	}
+
+	sdk.sdkConfiguration.DefaultClient = sdk.sdkConfiguration.Hooks.ClientInit(sdk.sdkConfiguration.DefaultClient)
 
 	// Use WithClient to override the default client if you would like to customize the timeout
 	if sdk.sdkConfiguration.DefaultClient == nil {
