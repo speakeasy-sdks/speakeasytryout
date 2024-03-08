@@ -25,7 +25,6 @@ import(
 	"github.com/speakeasy-sdks/speakeasytryout"
 	"context"
 	"log"
-	"net/http"
 )
 
 func main() {
@@ -41,8 +40,7 @@ func main() {
     if err != nil {
         log.Fatal(err)
     }
-
-    if res.StatusCode == http.StatusOK {
+    if res != nil {
         // handle response
     }
 }
@@ -90,7 +88,6 @@ func main() {
     if err != nil {
         log.Fatal(err)
     }
-
     if res.ListPetsResponse200JSON != nil {
         // handle response
     }
@@ -141,7 +138,6 @@ func main() {
     if err != nil {
         log.Fatal(err)
     }
-
     if res.Pet != nil {
         // handle response
     }
