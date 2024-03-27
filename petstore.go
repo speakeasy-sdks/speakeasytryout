@@ -145,9 +145,9 @@ func New(opts ...SDKOption) *Petstore {
 		sdkConfiguration: sdkConfiguration{
 			Language:          "go",
 			OpenAPIDocVersion: "1.0.0",
-			SDKVersion:        "0.9.2",
-			GenVersion:        "2.283.1",
-			UserAgent:         "speakeasy-sdk/go 0.9.2 2.283.1 1.0.0 github.com/speakeasy-sdks/speakeasytryout",
+			SDKVersion:        "0.9.3",
+			GenVersion:        "2.291.0",
+			UserAgent:         "speakeasy-sdk/go 0.9.3 2.291.0 1.0.0 github.com/speakeasy-sdks/speakeasytryout",
 			Hooks:             hooks.New(),
 		},
 	}
